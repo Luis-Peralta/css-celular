@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(63, 92, 117),rgb(131, 171, 206));
+}
+
+.contenedor-celular{
+    margin: 5%;
+    width: 366px;
+    border: 5px solid rgb(53, 53, 53);
+    border-radius: 10px;
+}
+
+.caja-superior{
+    border: 3px solid black;
+    background-color: rgb(97, 97, 97);
+    padding: 10px;   
+}
+
+.camara{
+    border: 2px solid rgb(42, 42, 42);
+    background: radial-gradient(rgb(83, 83, 83),rgb(39, 39, 39));
+    padding-left: 18px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.notificaciones{
+    
+    padding-left: 18px;
+    margin: 2px;
+    border-radius: 50%; 
+    margin-left: 10px;
+    animation-name: parpadea;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes parpadea {
+    from {
+        background: radial-gradient(rgb(65, 65, 65),rgb(97, 97, 97));
+    }
+    to {
+        background: radial-gradient(rgb(108, 221, 255),4px,rgb(97, 97, 97));
+    }
+}
+
+
+.audio{
+    background: radial-gradient(rgb(53, 53, 53),2px,rgb(97, 97, 97));
+    padding-left: 18px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.pantalla{
+    border: 3px solid black;
+    background-color: rgb(0, 0, 0);
+}
+
+.caja-inferior{
+    border: 3px solid black;
+    background-color: rgb(97, 97, 97);
+}
+
+#portal{
+    color: rgb(255, 255, 255);
+    margin-left: 65px;
+    font-family: 'Staatliches', cursive;
+    opacity: 0.3;
+}
+
+.boton-inicio{
+    padding: 15px;
+    width: 80px;
+    margin: 5px;
+    margin-left: 40%;
+    border-radius: 4px;
+}
+
+.bgC{
+    width: 350px;
+    padding: 2px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.bgC:hover{
+    opacity: 1;
+}
